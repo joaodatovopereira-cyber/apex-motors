@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Apex Motors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">APEX <span>MOTORS</span></a>
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="motos.html" class="nav-link">Motos</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+          <li><a href="contato.html" class="nav-link active">Contato</a></li>
+          <li><a href="motos.html" class="btn btn-primary">Comprar uma moto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Fale Conosco</h1>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+      <form id="contact-form" style="background-color: var(--bg-card); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="name">Nome Completo *</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="phone">Telefone / WhatsApp</label>
+          <input type="tel" id="phone" class="form-control">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label for="moto-interest">Moto de Interesse</label>
+          <input type="text" id="moto-interest" class="form-control" placeholder="Ex: Yamaha MT-09">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label for="message">Mensagem</label>
+          <textarea id="message" rows="4" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+        <div id="form-feedback"></div>
+      </form>
+
+      <div>
+        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Informações da Loja</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Endereço:</strong> Av. das Nações Unidas, 1000 - São Paulo, SP</p>
+        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Telefone:</strong> (11) 3333-4444</p>
+        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>WhatsApp:</strong> (11) 99999-9999</p>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;"><strong>E-mail:</strong> contato@apexmotors.com.br</p>
+        
+        <div style="width: 100%; height: 250px; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
+          [ Área Reservada para Google Maps ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 Apex Motors. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
